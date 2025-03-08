@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Ping coming soon page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Ping coming soon page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <img class="container__logo" src="_images/logo.svg" alt="logo" />
+      <h1 class="container__titulo">We are launching <strong>soon!</strong></h1>
 
-</head>
-<body>
-<main class="container">
-  <img src="_images/logo.svg" alt="logo">
-  <h1>We are launching <strong>soon!</strong></h1>
+      <p class="container__p">Subscribe and get notified</p>
+      
+      <section class="container__login">
+      <input
+      class="container__email"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@emai.com"
+      />
+      <button class="container__btn" type="submit">Notify Me</button>
+    </section>
+      <div class="container__img">
+        <img src="_images/illustration-dashboard.png" alt="DashBoard" />
+      </div>
 
-  <p>Subscribe and get notified</p>
-
-  <button type="submit">Notify Me</button>
-  
-  <div>
-    <img src="_images/illustration-dashboard.png" alt="DashBoard">
-
-  </div>
-  <footer>
-    &copy; Copyright Ping. All rights reserved.
-  </footer>
-</main>
-
-</body>
+      <section class="redes">
+        <div class="social redes--tw"></div>
+        <div class="social redes--fc"></div>
+        <div class="social redes--inst"></div>
+        <!-- redes sociales -->
+      </section>
+      <footer class="footer">&copy; Copyright Ping. All rights reserved.</footer>
+    </main>
+  </body>
 </html>

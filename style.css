@@ -1,0 +1,117 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+  --Blue-color: hsl(223, 87%, 63%);
+  /* ### Secondary */
+  --Pale-Blue-color: hsl(223, 100%, 88%);
+  --Light-Red-color: hsl(354, 100%, 66%);
+  /* ### Neutral */
+  --Gray-color: hsl(0, 0%, 59%);
+  --Very-Dark-Blue-color: hsl(209, 33%, 12%);
+
+  font-family: "Libre Franklin", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.container {
+  background-color: aquamarine;
+  width: 350px;
+  padding: 30px;
+}
+.container__logo {
+  display: block;
+  background-color: blue;
+  width: 50%;
+  margin: 0px auto;
+}
+.container__titulo {
+  background-color: white;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.container__p {
+  background-color: yellow;
+  margin: 10px 0px;
+  text-align: center;
+}
+.container__login {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.container__email {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 35px;
+  padding-left: 20px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  outline: none;
+}
+.container__btn {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.container__img img {
+  background-color: blue;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.redes {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.redes--tw {
+  background-color: yellow;
+  background-image: url(/images/Facebook.png);
+}
+.redes--fc {
+  background-color: antiquewhite;
+  background-image: url(/images/Twitter.png);
+}
+.redes--inst {
+  background-color: burlywood;
+  background-image: url(/images/Instagram.png);
+}
+
+.footer {
+  margin: 10px 0px;
+}
