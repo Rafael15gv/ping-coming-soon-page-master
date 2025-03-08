@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,30 +26,31 @@ body {
 }
 
 .container {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 350px;
   padding: 30px;
 }
 .container__logo {
   display: block;
-  background-color: blue;
-  width: 50%;
   margin: 0px auto;
+  padding-top: 30px;
 }
 .container__titulo {
-  background-color: white;
   margin: 10px 0px;
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
+  color: var(--Gray-color);
+}
+
+.container__titulo--strong {
+  color: black;
 }
 .container__p {
-  background-color: yellow;
   margin: 10px 0px;
   text-align: center;
 }
 .container__login {
-  background-color: brown;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,32 +59,33 @@ body {
   margin: 10px 0px;
 }
 .container__email {
-  background-color: cornflowerblue;
   width: 100%;
   height: 35px;
   padding-left: 20px;
-  border: 1px solid blue;
+  border: 1px solid var(--Pale-Blue-color);
   border-radius: 15px;
   outline: none;
 }
 .container__btn {
-  background-color: cornflowerblue;
+  background: var(--Blue-color);
   width: 100%;
   height: 35px;
   border: none;
   border-radius: 15px;
   color: white;
 }
+.container__btn:hover {
+  cursor: pointer;
+  background: var(--Very-Dark-Blue-color);
+}
 
 .container__img img {
-  background-color: blue;
   display: block;
-  width: 50%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0px auto;
 }
 
 .redes {
-  background-color: green;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -100,18 +102,39 @@ body {
   background-repeat: no-repeat;
 }
 .redes--tw {
-  background-color: yellow;
   background-image: url(/images/Facebook.png);
 }
 .redes--fc {
-  background-color: antiquewhite;
   background-image: url(/images/Twitter.png);
 }
 .redes--inst {
-  background-color: burlywood;
   background-image: url(/images/Instagram.png);
 }
 
 .footer {
   margin: 10px 0px;
+  text-align: center;
+}
+
+@media (width >=450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 100%;
+    padding: 0px 30px;
+  }
+
+  .container__login {
+    flex-direction: row;
+  }
+
+  .container__email {
+    width: 60%;
+  }
+
+  .container__btn {
+    width: 40%;
+  }
 }
