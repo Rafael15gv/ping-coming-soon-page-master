@@ -24,16 +24,19 @@
 
       <p class="container__p">Subscribe and get notified</p>
       
-      <section class="container__login">
+      <form class="container__login">
       <input
+      oninvalid="return false"
       class="container__email"
-        type="email"
+        type="text"
         name="email"
         id="email"
         placeholder="example@emai.com"
       />
       <button class="container__btn" type="submit">Notify Me</button>
-    </section>
+    </form >
+    <p class="error hidden p1">Casilla Email Vacia</p>
+    <p class="error hidden p2">Formato Email invalido</p>
       <div class="container__img">
         <img src="images/illustration-dashboard.png" alt="DashBoard" />
       </div>
@@ -50,5 +53,6 @@
       </p>
     </footer>
     </main>
+    <script src="/index.js"></script>
   </body>
 </html>
